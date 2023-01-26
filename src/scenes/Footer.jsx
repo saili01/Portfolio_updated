@@ -7,10 +7,7 @@ const Footer = () => {
         <SocialMediaIcons />
         <div className="md:flex justify-center md:justify-between text-center ">
           <p className="font-playfair font-semibold text-2xl text-yellow">
-            JANE ESPER
-          </p>
-          <p className="font-playfair text-md text-yellow">
-            ©2022 ESPER. All Rights Reserved.
+            SAILI MANCHKAR
           </p>
         </div>
       </div>

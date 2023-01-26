@@ -1,0 +1,55 @@
+.d-flex{
+    display: flex;
+    margin-bottom: 40px;
+}
+.skills-content{
+    margin-top: 30px;
+}
+.front-rib{
+    flex:0 0 130px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.front-rib span{
+    padding: 20px;
+    background-color: rgb(220 68 146);
+    width: 120px;
+}
+.front-content{
+    padding-left: 20px;  
+}
+/* .back-end{
+    display: flex;
+    align-items: center;
+}
+.others{
+    display: flex;
+    align-items: center;
+} */
+h3{
+    font-size: 1.8rem;
+    color:rgb(44 188 233);
+    margin:0 0 12px 0
+}
+
+ul{
+    position: relative;
+    top:0;
+    width:100%;
+    padding:0
+}
+li{
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+li::after{
+    content:"•";
+    font-size:19px;
+    color:rgb(220 68 146);
+    margin-left: 5px;
+}

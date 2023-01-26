@@ -1,15 +1,15 @@
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import "./MySkills.css"
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-center mt-32">
         <motion.div
-          className="md:w-1/3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -23,28 +23,71 @@ const MySkills = () => {
             MY <span className="text-red">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
-          </p>
+          <div className="skills-content">
+          <div className="d-flex front">
+              <div className="front-rib">
+              <span>Front-end</span>
+              </div>
+              <div className="front-content">
+                <div className="front-grp">
+                  <h3>JavaScript</h3>
+                  <ul className="grp-list">
+                    <li>Single Page Application (SPA)</li>
+                    <li>ES6</li>
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Webpack</li>
+                    <li>GraphQL</li>
+                    <li>Redux</li>
+                    <li>JQuery</li>
+                    <li>Electron JS</li>
+                  </ul>
+                </div>
+                <div className="front-grp">
+                <h3 style={{marginTop:12}}>HTML & CSS</h3>
+                  <ul className="grp-list">
+                    <li>Responsive Websites</li>
+                    <li>Tailwind</li>
+                    <li>CSS-in-JS (Emotion,styled-components,Material UI)</li>
+                    <li>SASS</li>
+                    <li>Material UI</li>
+                    <li>Bootstrap</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div className="d-flex back">
+              <div className="front-rib"><span>Back-end</span></div>
+              <div className="front-content back-end">
+                <div className="front-grp">
+                  <ul className="grp-list">
+                    <li>Node JS</li>
+                    <li>Express JS</li>
+                    <li>Mongo DB</li>
+                    <li>Azure Fundamentals</li>
+                    <li>Heroku</li>
+                    <li>Rest APIs</li>
+                  </ul>
+                </div>
+          </div>
+          </div>
+          <div className="d-flex others">
+              <div className="front-rib"><span>Others</span></div>
+              <div className="front-content others">
+                <div className="front-grp">
+                  <ul className="grp-list">
+                    <li>Search Engine Optimization</li>
+                    <li>Designing RESTful APIs</li>
+                    <li>UI Prototyping</li>
+                    <li>Figma design tool</li>
+                    <li>Github</li>
+                    <li>JIRA</li>
+                  </ul>
+                </div>
+          </div>
+          </div>
+          </div>
         </motion.div>
-
-        <div className="mt-16 md:mt-0">
-          {isAboveLarge ? (
-            <div
-              className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-              before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
-            >
-              <img
-                alt="skills"
-                className="z-10"
-                src="assets/skills-image.png"
-              />
-            </div>
-          ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
-          )}
-        </div>
       </div>
 
       {/* SKILLS */}
@@ -71,9 +114,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+          I have worked for marketing and advertisement, big companies, and startups. I have experience working with clients and remote development teams across different time zones. With over 5 years’ experience, I know where the pitfalls are in custom web applications and website projects, and how to guide you through safely.
           </p>
         </motion.div>
 
@@ -93,16 +134,13 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                Process
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+          My detailed, step-by-step process ensures we don’t miss crucial elements that could fail your project. With each project, before I start coding, I do an extensive road-mapping session in which I define S.M.A.R.T. (specific, measurable, attainable, relevant, time-bound) goals for the project.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -121,16 +159,13 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+                Satisfaction
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+          I continuously and automatically test the developed features to make sure the application behaves properly, and to catch any bugs early. One-off projects often turn into long-term business relationships, with clients enjoying ongoing guidance and support long after I’ve launched.
           </p>
         </motion.div>
       </div>
