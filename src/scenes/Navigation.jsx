@@ -19,4 +19,4 @@ export const Navigation = ({selectedPage,setSelectedPage}) => (
   </motion.ul>
 );
 
-const itemIds = ['Home','Skills','Projects','Testimonials','Contact'];
+const itemIds = ['Home','Skills','Projects','Experience','Contact'];

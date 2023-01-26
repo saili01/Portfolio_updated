@@ -66,4 +66,17 @@ li {
   align-items: center;
   cursor: pointer;
 }
-
+.project-content{
+  margin-top: 400px;
+}
+.contact-content{
+  margin-top: 300px;
+}
+@media (max-width: 1060px){
+  .project-content{
+    margin-top: 60px;
+  }
+  .contact-content{
+    margin-top: 0;
+  }
+}

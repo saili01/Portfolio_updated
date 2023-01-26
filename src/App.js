@@ -8,7 +8,7 @@ import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
-import Testimonials from "./scenes/Testimonials";
+import Experience from "./scenes/Experience";
 import { motion } from "framer-motion";
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto" style={{ marginTop: 400 }}>
+      <div className="w-5/6 mx-auto project-content">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -75,13 +75,13 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
+          onViewportEnter={() => setSelectedPage("experience")}
         >
-          <Testimonials />
+          <Experience />
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full contact-content">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"

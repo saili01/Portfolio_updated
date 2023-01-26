@@ -22,7 +22,6 @@ const variants = {
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 const Link = ({ page, index, selectedPage, setSelectedPage }) => {
-    console.log('saili',index)
     const lowerCasePage = page.toLowerCase();
     return (
       <AnchorLink
